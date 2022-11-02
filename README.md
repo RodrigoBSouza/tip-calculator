@@ -19,9 +19,11 @@ Os usuários devem ser capazes de:
 ![](./images/desktop-dark-mode.png)
 
 - Mobile Light Mode
+
 ![](./images/mobile-light-mode.png)
 
 - Mobile Dark Mode
+
 ![](./images/mobile-dark-mode.png)
 
 ### Built with
