@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <header class="calc-header">
+    <div class="calc-title-h2">
+      <h2>SPLI</h2>
+      <h2>TTER</h2>
+    </div>
+    
+    <div class="calc-btn-mode">
+      <button id="btn-dark-mode">DARK</button>
+      <button id="btn-light-mode">LIGHT</button>
+    </div>
+  </header>
+
+  <section class="calc-container">
+
+    <div class="calc-container-all">
+      <div class="calc-container-tips">
+        <div class="calc-bill">
+          <label for="calc-bill-input">Bill
+            <span class="error">Enter a value</span>
+            <input type="number" id="calc-bill-input" placeholder="0" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)" maxlength = "10">
+          </label>
+        </div>
+
+        <h2>Select Tip %</h2>
+        <div class="calc-tips">
+          <button class="calc-btn" id="tip-5">5%</button>
+          <button class="calc-btn" id="tip-10">10%</button>
+          <button class="calc-btn" id="tip-15">15%</button>
+          <button class="calc-btn" id="tip-25">25%</button>
+          <button class="calc-btn" id="tip-50">50%</button>
+          <input class="calc-input-custom" id="tip-custom" placeholder="Custom">
+        </div>
+  
+        <div class="calc-people">
+          <label for="calc-people-input" class="label-number-people">Number of People
+            <span class="error">Can't be zero</span>
+            <input type="number" id="calc-people-input" class="calc-bill-dark" placeholder="0">
+          </label>
+        </div>
+      </div>
+  
+      <div class="calc-container-result">
+        <div class="calc-container-tip-amount">
+          <h2>Tip Amount</br><p class="calc-person">/ person</p></h2>
+          <div id="tip-amount">$00.00</div>
+        </div>
+  
+        <div class="calc-container-total">
+          <h2>Total</br><p class="calc-person">/ person</p></h2>
+          <div id="tip-total">$00.00</div>
+        </div>
+  
+        <button id="calc-btn-reset">RESET</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="dark-mode.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
